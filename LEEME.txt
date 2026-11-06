@@ -1,0 +1,28 @@
+MOCHILA S.O.S. - PROTOTIPO MEJORADO
+
+ARCHIVOS
+- index.html: estructura de la aplicación.
+- styles.css: diseño adaptable para computadora y celular.
+- app.js: listas, progreso, mapa, recomendaciones y asistente con voz.
+- assets/asistente-sos.png: mascota enviada para el asistente.
+
+CÓMO ABRIR
+1. Extrae el archivo ZIP.
+2. Abre la carpeta.
+3. Haz doble clic en index.html.
+
+PUBLICAR EN GITHUB PAGES
+1. Sube todos los archivos y la carpeta assets a tu repositorio.
+2. Mantén index.html en la raíz del repositorio.
+3. En GitHub, entra a Settings > Pages.
+4. Selecciona Deploy from a branch, la rama main y la carpeta / (root).
+5. Guarda y espera a que GitHub publique la página.
+
+NOTAS IMPORTANTES
+- El mapa usa OpenStreetMap y necesita internet para cargar las calles.
+- Las zonas coloreadas son ejemplos visuales, no mapas oficiales de peligro o seguridad.
+- La ubicación requiere permiso del navegador y una conexión segura (HTTPS).
+- El asistente tiene respuestas guiadas. La lectura de voz usa la función del navegador; el dictado depende del soporte del navegador.
+- No incluye una IA generativa conectada a un servicio externo.
+- Las listas se guardan en el almacenamiento local del navegador.
+- Consulta INDECI, SENAMHI, IGP y CENEPRED para información y alertas oficiales.
