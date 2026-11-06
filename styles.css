@@ -35,3 +35,62 @@ footer .footer-logo{width:86px;height:86px;object-fit:cover;border-radius:20px;d
 .mapwarning{background:#fffdf0ed;border:1px solid #e5d6a5;border-radius:4px;font-weight:700}
 .legend{background:#fffffff2;border-radius:5px;box-shadow:0 1px 4px #0002}
 @media(max-width:550px){.zone{font-size:8px}.mapdraw{background-size:auto}}
+
+/* Extensión Mochilas S.O.S. - estilo azul, blanco y rojo del logo */
+:root{--navy:#102f59;--blue-soft:#eaf2fc;--blue-line:#d7e4f5;--red:#d92735}
+body{background:#f3f7fc;color:#18365f}
+header{background:#fff;border-bottom:1px solid var(--blue-line)}
+header .logo img{object-fit:contain}
+nav button,.bottom button{color:var(--navy)}
+nav button.active,.bottom button.active{background:#e5effc;color:var(--navy)}
+button.lime,.lime{background:var(--navy);color:#fff}
+button.lime:hover{background:#1c477d}
+.panel,article.panel,.assistant-card{background:#fff;border:1px solid var(--blue-line);box-shadow:0 8px 22px rgba(22,55,95,.06)}
+.notice{background:#edf4fc;border-color:#d8e6f8;color:#24466e}
+.notice.warning{background:#fff4f3;border:1px solid #f2c7c8;color:#702b31}
+.heading h1,.heading h2,h1,h2,h3{color:var(--navy)}
+.profiles button{background:#fff;border:1px solid var(--blue-line);color:var(--navy)}
+.profiles button.selected{background:#e8f1fc;border-color:#6e9bd0}
+.backpack-view{margin-bottom:18px}
+.eyebrow{color:#58779d;font-weight:700;letter-spacing:.08em}
+.bag-stage{display:grid;grid-template-columns:minmax(220px,1fr) minmax(180px,.8fr);gap:20px;align-items:center;padding:16px;background:#f7faff;border-radius:18px}
+.bag-visual{height:260px;max-width:260px;width:100%;margin:auto;position:relative;background:linear-gradient(145deg,#f0444e,#bd1828);border:9px solid #172f4d;border-radius:42% 42% 28% 28%;box-shadow:inset -16px -8px 0 rgba(0,0,0,.12),0 15px 22px rgba(16,47,89,.18);transition:transform .45s}
+.bag-visual.turned{transform:perspective(700px) rotateY(28deg)}
+.bag-handle{position:absolute;top:-34px;left:37%;width:26%;height:42px;border:9px solid #172f4d;border-bottom:0;border-radius:20px 20px 0 0}
+.bag-top{position:absolute;top:15%;left:13%;width:74%;height:28%;border-radius:22px;background:#e52b3b;border:5px solid #172f4d}
+.bag-front{position:absolute;left:18%;right:18%;bottom:12%;height:39%;border-radius:18px;background:#d92735;border:5px solid #172f4d;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;gap:6px}
+.bag-front span{font-size:42px;line-height:1}.bag-front b{font-size:10px;letter-spacing:.08em}
+.bag-pocket{position:absolute;z-index:2;border:2px solid #fff;background:#102f59;color:white;border-radius:50%;width:32px;height:32px;font-weight:800;cursor:pointer}
+.pocket-top{top:23%;left:46%}.pocket-side{right:-14px;top:58%}.pocket-front{bottom:21%;left:46%}
+.bag-pocket.chosen{background:#e5aeb3;color:#102f59;outline:3px solid #fff}
+.compartment-info{background:#fff;border:1px solid var(--blue-line);border-radius:14px;padding:18px}
+.compartment-info p{margin-bottom:0;color:#526984}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-bottom:16px}
+.form-grid label{display:grid;gap:6px;font-weight:650}
+.form-grid input,.form-grid select{padding:12px;border:1px solid var(--blue-line);border-radius:10px;background:#fff;color:var(--navy)}
+.family-list{display:grid;gap:10px;margin-top:18px}
+.member-row{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#f6f9fe;border:1px solid var(--blue-line);border-radius:12px;padding:12px}
+.member-row small{display:block;color:#637995;margin-top:4px}
+.member-row button{border:1px solid #e4b8bb;background:#fff;color:#a52b35;border-radius:8px;padding:8px}
+.assistant-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,.8fr);gap:18px;align-items:start}
+.assistant-card{border-radius:18px;overflow:hidden}
+.assistant-head{display:flex;align-items:center;gap:12px;padding:18px;background:#edf4fc;border-bottom:1px solid var(--blue-line)}
+.assistant-head h2{margin:0}.bot-avatar{width:52px;height:52px;display:grid;place-items:center;background:#102f59;color:white;border-radius:50%;font-size:25px}
+.chat-messages{height:290px;overflow:auto;padding:18px;display:flex;flex-direction:column;gap:12px}
+.chat{max-width:88%;padding:12px 14px;border-radius:15px;line-height:1.45}
+.chat.bot{background:#eef4fc;color:#193b65;align-self:flex-start;border-bottom-left-radius:4px}
+.chat.user{background:#173f70;color:white;align-self:flex-end;border-bottom-right-radius:4px}
+.quick-prompts{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 14px}
+.quick-prompts button{background:#fff;border:1px solid var(--blue-line);color:#234a78;border-radius:18px;padding:8px 11px;font-size:12px}
+.chat-input{display:flex;gap:8px;padding:14px;border-top:1px solid var(--blue-line)}
+.chat-input input{min-width:0;flex:1;border:1px solid var(--blue-line);border-radius:22px;padding:12px}
+.phenomenon-grid,.source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.phenomenon{overflow:hidden;padding:0 0 16px}
+.phenomenon img{width:100%;height:150px;object-fit:cover;display:block}
+.phenomenon h3,.phenomenon p,.phenomenon button{margin-left:16px;margin-right:16px}
+.source{text-decoration:none;color:var(--navy);display:flex;flex-direction:column;gap:8px}
+.source b{font-size:20px}.source span{color:#5d718c}
+.guide-step{padding:12px 14px;margin:10px 0;background:#f3f7fc;border-left:4px solid #315f93;border-radius:8px}
+.guide-step b{font-size:12px;letter-spacing:.08em;color:#315f93}
+.guide-step p{margin:5px 0 0}
+@media(max-width:760px){.bag-stage,.assistant-layout{grid-template-columns:1fr}.form-grid,.phenomenon-grid,.source-grid{grid-template-columns:1fr}.bag-visual{height:230px;width:220px}.compartment-info{margin-top:0}}
